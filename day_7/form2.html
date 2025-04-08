@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form2</title>
+
+    <style>
+        form{
+            border: 2px solid black;
+            width: 400px;
+            margin: 30px auto;
+            text-align: center; 
+        }
+
+        button{
+            color: turquoise;
+            background-color: blueviolet;
+
+        }
+        fieldset{
+            width: 80%;
+            margin: 25px;
+        }
+    </style>
+
+</head>
+<body>
+    <form action="" method="get">
+
+        <fieldset>
+          <legend>Basic Information</legend>
+          <label for="fname">First Name</label>
+          <input type="text"  id="fname" name="fname">
+          <br><br>
+          <label for="lname">Last Name</label>
+          <input type="text"  id="lname" name="lname">
+          <br><br>
+          <label for="age">Age</label>
+          <input type="number" name="age" id="age" min="10" max="45">
+          <br><br>
+  
+          
+          <label for="gender">Gender</label>
+          <input type="radio" name="gender" id="male" value="male" >
+          <label for="male">Male</label>
+          <input type="radio" name="gender" id="female" value="female">
+          <label for="female">Female</label>
+          <input type="radio" name="gender" id="other" value="other" checked>
+          <label for="other">Other</label>
+          <br><br>
+          <label for="dob">Date of Birth</label>
+           <input type="date" name="dob" id="dob">
+           <br><br>
+  
+           <label for="image">Upload Image</label>
+           <input type="file" name="image" id="image" accept="image/*">
+           
+           <!-- <label for="phone">Phone</label>
+           <input type="text" name="" id="" value="287346354326" readonly>
+           <input type="text" name="" id="" value="287346354326" hidden> -->
+          
+     
+        </fieldset>
+  
+  
+        <fieldset>
+          <legend>Favorites</legend>
+  
+          <label for="color">Favorite Color</label>
+          <input type="checkbox" name="red" id="red">
+          <label for="red">Red</label>
+          <input type="checkbox" name="green" id="green">
+          <label for="green">Green</label>
+          <input type="checkbox" name="yellow" id="yellow">
+          <label for="yellow">Yellow</label>
+  
+          <br><br>
+          <label for="item">Favorite FoodItem</label>
+          <select name="item" id="item" >
+              <option value="">Select food</option>
+              <optgroup label="Tiffins">
+                  <option value="idly">Idly</option>
+                  <option value="dosa">Dosa</option>
+              </optgroup>
+              <optgroup label="non-veg">
+                  <option value="biriyani">Biriyani</option>
+                  <option value="freidrice">Fried Rice</option>
+              </optgroup>
+          </select>
+          <br><br>
+          <label for="subject">Favorite Subject</label>
+          <select name="subject" id="subject" multiple size="2">
+              <option value="maths">Maths</option>
+              <option value="science">Science</option>
+              <option value="history">History</option>
+              <option value="english">English</option>
+          </select>
+  
+          <br><br>
+  
+          <label for="game">Favorite Game</label>
+          <input   name="game" id="game" list="games">
+          <datalist id="games">
+              <option value="cricket"></option>
+              <option value="football"></option>
+              <option value="hockey"></option>
+          </datalist>
+  
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Contact Information</legend>
+    
+            <input type="search">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email"></label>
+            <br><br>
+            <label for="phone">Phone</label>
+            <input type="tel" name="phone" id="phone" placeholder="Enter your 10 digit number" pattern="[0-9]{10}">
+            <br><br>
+            <label for="pwd">Password</label>
+            <input type="password" name="pwd" id="pwd" required>
+    
+            <br><br>
+            <label for="address">Address</label>
+            <textarea name="address" id="address"></textarea>
+          </fieldset>
+            
+          <br>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </form>
+  
+ 
+</body>
+</html>

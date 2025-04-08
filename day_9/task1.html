@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Task</title>
+
+    <style>
+
+        .mainContainer{
+            min-height: 100vh;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+        }
+        .item{
+            font-size: 40px;
+            text-align: center;
+            align-content: center;
+            margin: 5px;
+            border-radius: 20px;
+        }
+        .header{
+            background-color: red;
+            grid-column: 1/3;
+        }
+        .content{
+            background-color: blue;
+            grid-row: 2/4;
+        }
+        .section1{
+            background-color: green;
+        }
+        .section2{
+            background-color: aqua;
+        }
+        .footer{
+            background-color: yellowgreen;
+            grid-column: 1/3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="mainContainer">
+        <div class="item header">Header</div>
+        <div class="item content">content</div>
+        <div class="item section1">Section1</div>
+        <div class="item section2">Section2</div>
+        <div class="item footer">footer</div>
+    </div>
+    
+</body>
+</html>

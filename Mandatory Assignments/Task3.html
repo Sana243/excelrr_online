@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+
+    <style>
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="container">
+
+    <h1>Form Input Controls Example</h1>
+
+    <form action="" method="get">
+
+          <label for="name">Name:</label>
+          <input type="text"  id="name" name="name " placeholder="Enter your name">
+
+          <label for="password">Password:</label>
+          <input type="text"  id="password" name="password" placeholder="Enter your password">
+
+          <label for="email">Email:</label>
+          <br><br>
+          <input type="number" name="email" id="email" placeholder="Enter your email">
+
+          <label for="age">Age:</label>
+          <input type="number" name="age" id="age" min="10" max="45" value="18">
+
+          <label for="rating">Rating:</label>
+          <input type="range" name="rating" id="rating" style="accent-color: blue;">
+
+          <label for="dob">Date of Birth:</label>
+          <br><br>
+          <input type="date" name="dob" id="dob" value="2000-01-01">
+
+          <label for="time">Time:</label>
+          <input type="time" name="time" id="time" value="12:00">
+
+          <label for="image" >Image:</label>
+          <input type="text" value="150 x 50" style="width:150px; height:50px; background-color:lightgray; color:#888; border:1px solid #ccc; text-align:center;">
+          <br><br>
+
+          <label for="week">Week:</label>
+          <input type="week" name="week" id="week">
+          <br><br>
+
+          <label for="month">Month:</label>
+          <input type="month" name="month" id="month">
+          <br><br>
+
+          <label for="datetime-local">Datetime-Local:</label>
+          <input type="datetime-local" name="datetime-local" id="datetime-local" placeholder="dd-mm-yyyy --:--"> 
+          <br><br>
+
+          <label for="url">URL:</label>
+          <input type="url" name="url" id="url">
+          <br><br>
+
+          <label for="search">Search:</label>
+          <input type="search" name="seach" id="search">
+          <br><br>
+
+          <label for="gender">Gender:</label>
+          <br><br>
+          <input type="radio" name="gender" checked style="accent-color: blue;"> Male
+          <input type="radio" name="gender"> Female
+          <br><br>
+
+          <label for="intresets">Interests:</label>
+          <br><br>
+          <input type="checkbox"> Reading
+          <input type="checkbox" checked style="accent-color: blue;"> Sports
+
+          <label for="country">Country:</label>
+          <select>
+              <option>United States</option>
+              <option>India</option>
+              <option>China</option>
+              <option>Srilanka</option>
+          </select>
+
+          <label for="message">Message:</label><br>
+          <textarea placeholder="Enter your message" rows="4" cols="50"></textarea>
+  
+          <input type="submit" value="Submit">
+    </form>
+    
+</div>
+
+</body>
+</html>

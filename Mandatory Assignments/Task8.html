@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bulb design</title>
+  <style>
+    body {
+      text-align: center;
+      font-family: Arial, sans-serif;
+      margin-top: 50px;
+    }
+
+    #bulb {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      border: 2px solid black;
+      margin: 20px auto;
+      background-color: white;
+    }
+
+    .btn-container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    button {
+      padding: 5px 5px;
+      font-size: 16px;
+      background-color: #fcebd4;
+      border: 1px solid black;
+      cursor: pointer;
+      height: 100px;
+    }      
+  </style>
+</head>
+<body>
+
+  <div id="bulb"></div>
+
+  <div class="btn-container">
+    <button onclick="turnOn()">ON</button>
+    <button onclick="turnOff()">OFF</button>
+  </div>
+
+  <script src="Task8.js"></script>
+</body>
+</html>

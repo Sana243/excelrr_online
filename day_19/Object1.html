@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object 1</title>
+</head>
+<body>
+
+    <script>
+
+        function Person(){
+
+        }
+        let  p1=new Person();
+        console.log(p1);
+
+        function Person2(name){
+            this.name=name; //this.name is a property of the person2 object
+        }
+        let  p2=new Person2('Sana');
+        console.log(p2);
+
+
+        let p3={
+            "name":'sana'
+        }
+        console.log(p3);
+
+        class Person3{
+            constructor(name1){
+                this.name=name1;
+            }
+            getName(){
+                return '${this.name} is a person';
+            }
+        }
+
+        let p4=new Person3('sana');
+        console.log(p4);
+        console.log(p4.getName());
+        console.log(p4.name);
+
+
+
+
+    </script>
+    
+</body>
+</html>

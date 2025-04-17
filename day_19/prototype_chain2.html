@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prototype Chain 2</title>
+</head>
+<body>
+
+    <script>
+        const Animal={
+            Species:'Animal',
+
+            eat:function(){
+                console.log("Animal eats");
+            },
+        };
+        console.log(Animal);
+        console.log("Animal eats");
+
+        const Dog=Object.create(Animal);//creating Dog object with Animal asprototype
+        Dog.color='black';
+
+        Dog.bark=function(){
+            console.log('Dog barks');
+        };
+        
+        Dog.eat=function(){
+            console.log('Dog eats');
+        }
+        console.log(Dog);
+        console.log(Dog.eat());
+
+        const Cat=Object.create(Animal);//creating Dog object with Animal as prototype
+        Cat.color='white';
+
+        Cat.meow=function(){
+            console.log("cat meows");
+        }
+        console.log(Cat);
+
+    </script>
+    
+</body>
+</html>

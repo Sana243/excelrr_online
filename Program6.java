@@ -10,13 +10,3 @@ class Program6{
    System.out.println("a value is " + a);   
 }
 }
-
-/*
-unary operator
-it is used to increment / decrement by the value 1
-1.increment unary operator
-   post increment 
-   pre increment
-2.decrement unary operator
-
-*/

@@ -1,4 +1,4 @@
-public public class ElseIfLadder {   
+public class ElseIfLadder {   
     public static void main(String[] args) {
         int age=29;
         //child age 0-12
@@ -20,12 +20,5 @@ public public class ElseIfLadder {
         else{
             System.out.println("reached to god");
         }
-
-
-
-
-
     }
-} {
-    
 }

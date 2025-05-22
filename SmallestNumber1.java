@@ -1,4 +1,4 @@
-class SmallestNumber1{
+class SmallestNumber{
  public static void main(String[]args){
       int a=21;
       int b=26;
